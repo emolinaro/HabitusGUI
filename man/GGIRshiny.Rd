@@ -4,24 +4,16 @@
 \alias{GGIRshiny}
 \title{GGIRshiny}
 \usage{
-GGIRshiny(
-  inputdir,
-  outputdir,
-  configfile = c(),
-  sleepdiary = c(),
-  desiredtz = c()
-)
+GGIRshiny(rawaccdir, outputdir, configfile = c(), sleepdiary = c())
 }
 \arguments{
-\item{inputdir}{Path to input directory}
+\item{rawaccdir}{Path to input directory}
 
 \item{outputdir}{Path to output directory}
 
 \item{configfile}{Configfile path}
 
 \item{sleepdiary}{Path to sleep diary}
-
-\item{desiredtz}{Desired tz databasename}
 }
 \value{
 no object is returned, only a new file is created in the output directory

@@ -1,4 +1,4 @@
-#' identify_tools 
+#' identify_tools
 #'
 #' @param datatypes Character vector with available data types
 #' @param goals Character vector with research goals
@@ -6,7 +6,7 @@
 #' @return List with proposed pipeline and tool input/ouptut properties
 #' @importFrom methods new setClass
 #' @export
-#' 
+#'
 
 # S4 class needs to be defined outside function
 setClass(Class = "toolio", slots = list(input="character", output="character", usecases="character"))
@@ -17,7 +17,7 @@ identify_tools = function(datatypes = c("AccRaw", "ACount", "GPS", "GIS"),
   iotools = list(GGIR = new("toolio",
                             input="AccRaw",
                             output=c("GGIR_out", "ACount"),
-                            usecases=c("PA", "Sleep", "QC", "Trips", "Environment")), 
+                            usecases=c("PA", "Sleep", "QC", "Trips", "Environment")),
                  PALMS = new("toolio",
                              input=c("ACount","GPS"),
                              output=c("PALMS_out"),
